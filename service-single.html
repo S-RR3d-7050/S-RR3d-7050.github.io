@@ -143,7 +143,7 @@
 
                         <div class="col-lg-9">
                             <!-- MaaS Section -->
-                            <div id="maas" class="service-section">
+                            <div id="maas" class="service-section" style="display: block;">
                                 <div class="row g-4 gx-5">
                                     <div class="col-lg-6">
                                         <div class="relative">
@@ -163,6 +163,7 @@
                                     </div>
                                 </div>
 
+                                <div class="spacer-double"></div>
                                 <div class="spacer-double"></div>
                                 <h2>Fonctionnalités Clés</h2>
 
@@ -231,6 +232,8 @@
                                 </div>
 
                                 <div class="spacer-double"></div>
+                                                                <div class="spacer-double"></div>
+
                                 <h2>Fonctionnalités Clés</h2>
 
                                 <div class="row g-4">
@@ -298,6 +301,8 @@
                                 </div>
 
                                 <div class="spacer-double"></div>
+                                <div class="spacer-double"></div>
+
                                 <h2>Fonctionnalités Clés</h2>
 
                                 <div class="row g-4">
@@ -352,7 +357,7 @@
                                             <div class="bg-color text-light p-4 absolute start-10 w-80 mt-min-70 rounded-1 sm-hide">
                                                 <div class="row g-4 align-items-center">
                                                     <div class="col-lg-12">
-                                                        <p class="no-bottom">Corrélation d'événements et détection avancée des menaces en temps réel.</p>
+                                                        <p class="no-bottom">Corrélation d'événements et détection avancée des menaces en temps réel avec une solution SIEM managée.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -365,6 +370,8 @@
                                 </div>
 
                                 <div class="spacer-double"></div>
+                                                                <div class="spacer-double"></div>
+
                                 <h2>Fonctionnalités Clés</h2>
 
                                 <div class="row g-4">
@@ -432,6 +439,8 @@
                                 </div>
 
                                 <div class="spacer-double"></div>
+                                <div class="spacer-double"></div>
+
                                 <h2>Fonctionnalités Clés</h2>
 
                                 <div class="row g-4">
@@ -499,6 +508,8 @@
                                 </div>
 
                                 <div class="spacer-double"></div>
+                                <div class="spacer-double"></div>
+
                                 <h2>Fonctionnalités Clés</h2>
 
                                 <div class="row g-4">
@@ -723,6 +734,13 @@
             // Show first service by default
             showService('maas');
             
+            // Set initial active state
+            const firstLink = document.querySelector('.me-lg-3 a[href="#maas"]');
+            if (firstLink) {
+                firstLink.classList.remove('bg-light');
+                firstLink.classList.add('bg-color', 'text-light');
+            }
+            
             serviceLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -740,9 +758,12 @@
             });
             
             function showService(serviceId) {
+                // Hide all service sections
                 serviceSections.forEach(section => {
                     section.style.display = 'none';
                 });
+                
+                // Show the target service section
                 const targetSection = document.getElementById(serviceId);
                 if (targetSection) {
                     targetSection.style.display = 'block';
