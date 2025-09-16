@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block sensitive or irrelevant paths (none on static site, kept for future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl-delay for aggressive bots (optional)
+# Crawl-delay: 5
+
+Sitemap: https://ztc.tn/sitemap.xml
