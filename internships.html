@@ -1,0 +1,2895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Threat Corporation - PFE Book 2025-2026</title>
+    <style>
+        :root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  /* RGB versions for opacity control */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  /* Background color tokens (Light Mode) */
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  /* Typography */
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+  /* Spacing */
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  /* Border Radius */
+  --radius-base: 8px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+  }
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+.presentation-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: var(--color-surface);
+    border-right: 1px solid var(--color-border);
+    overflow-y: auto;
+    padding: var(--space-16);
+}
+
+.sidebar-header {
+    margin-bottom: var(--space-24);
+}
+
+.sidebar-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--space-8);
+}
+
+.sidebar-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.slide-list {
+    list-style: none;
+}
+
+.slide-item {
+    padding: var(--space-12);
+    margin-bottom: var(--space-8);
+    border-radius: var(--radius-base);
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    background-color: var(--color-secondary);
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.slide-item:hover {
+    background-color: var(--color-secondary-hover);
+}
+
+.slide-item.active {
+    background-color: var(--color-primary);
+    color: var(--color-btn-primary-text);
+    font-weight: var(--font-weight-medium);
+}
+
+.slide-item-number {
+    font-weight: var(--font-weight-bold);
+    margin-right: var(--space-8);
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.slides-viewport {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--space-32);
+}
+
+.slide {
+    display: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-32);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-card-border);
+    box-shadow: var(--shadow-md);
+    min-height: 600px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide-header {
+    text-align: center;
+    margin-bottom: var(--space-32);
+}
+
+.slide-title {
+    font-size: 48px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--space-16);
+}
+
+.slide-subtitle {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-8);
+}
+
+.slide-tagline {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-medium);
+}
+
+.section-title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--space-24);
+}
+
+.section-description {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-24);
+    line-height: 1.6;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-16);
+    margin-bottom: var(--space-24);
+}
+
+.info-card {
+    padding: var(--space-20);
+    background-color: var(--color-bg-1);
+    border-radius: var(--radius-base);
+    border: 1px solid var(--color-card-border);
+}
+
+.info-card-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-12);
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+}
+
+.info-card-content {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-20);
+}
+
+.service-card {
+    padding: var(--space-24);
+    background-color: var(--color-bg-2);
+    border-radius: var(--radius-base);
+    border: 1px solid var(--color-card-border);
+}
+
+.service-icon {
+    font-size: 36px;
+    margin-bottom: var(--space-12);
+}
+
+.service-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-12);
+}
+
+.service-description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.values-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-20);
+}
+
+.value-item {
+    padding: var(--space-24);
+    background-color: var(--color-bg-3);
+    border-radius: var(--radius-base);
+    border: 1px solid var(--color-card-border);
+}
+
+.value-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-12);
+}
+
+.value-description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+}
+
+.career-paths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-20);
+}
+
+.career-card {
+    padding: var(--space-24);
+    background-color: var(--color-bg-4);
+    border-radius: var(--radius-base);
+    border: 2px solid var(--color-card-border);
+    text-align: center;
+}
+
+.career-icon {
+    font-size: 48px;
+    margin-bottom: var(--space-16);
+}
+
+.career-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-12);
+}
+
+.career-detail {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-8);
+}
+
+.career-cost {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-top: var(--space-16);
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-20);
+}
+
+.step-item {
+    padding: var(--space-24);
+    background-color: var(--color-bg-5);
+    border-radius: var(--radius-base);
+    border-left: 4px solid var(--color-primary);
+}
+
+.step-number {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--space-8);
+}
+
+.step-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-12);
+}
+
+.step-description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-12);
+}
+
+.subject-item {
+    padding: var(--space-16);
+    background-color: var(--color-bg-6);
+    border-radius: var(--radius-base);
+    font-size: var(--font-size-sm);
+    text-align: center;
+    border: 1px solid var(--color-card-border);
+}
+
+.subject-detail {
+    padding: var(--space-24);
+    background-color: var(--color-bg-7);
+    border-radius: var(--radius-base);
+    margin-bottom: var(--space-20);
+}
+
+.subject-ref {
+    font-size: var(--font-size-sm);
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-8);
+}
+
+.subject-title-detail {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-16);
+}
+
+.subject-meta {
+    display: flex;
+    gap: var(--space-24);
+    margin-bottom: var(--space-20);
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+}
+
+.subject-mission {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    margin-bottom: var(--space-20);
+}
+
+.subject-section-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-12);
+}
+
+.tasks-list {
+    list-style: none;
+    margin-bottom: var(--space-20);
+}
+
+.tasks-list li {
+    padding: var(--space-8) 0;
+    padding-left: var(--space-24);
+    position: relative;
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+}
+
+.tasks-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+}
+
+.technologies-box {
+    padding: var(--space-20);
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-base);
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-base);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-20) var(--space-32);
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: var(--space-12);
+}
+
+.nav-btn {
+    padding: var(--space-12) var(--space-24);
+    background-color: var(--color-primary);
+    color: var(--color-btn-primary-text);
+    border: none;
+    border-radius: var(--radius-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.slide-counter {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-medium);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    margin-top: var(--space-20);
+}
+
+.contact-item {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+}
+
+.experience-list {
+    list-style: none;
+}
+
+.experience-list li {
+    padding: var(--space-8) 0;
+    padding-left: var(--space-24);
+    position: relative;
+    font-size: var(--font-size-base);
+}
+
+.experience-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+}
+
+.toc-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+    margin-top: var(--space-32);
+}
+
+.toc-item {
+    padding: var(--space-24);
+    background-color: var(--color-bg-1);
+    border-radius: var(--radius-base);
+    border-left: 4px solid var(--color-primary);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+.highlight {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    
+    .slides-viewport {
+        padding: var(--space-16);
+    }
+    
+    .slide {
+        padding: var(--space-20);
+    }
+    
+    .slide-title {
+        font-size: 32px;
+    }
+    
+    .info-grid,
+    .services-grid,
+    .career-paths-grid,
+    .subjects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">ZTC PFE BOOK</div>
+                <div class="sidebar-subtitle">2025-2026</div>
+            </div>
+            <ul class="slide-list" id="slideList"></ul>
+        </aside>
+        
+        <main class="main-content">
+            <div class="slides-viewport" id="slidesViewport">
+                <!-- Slides will be generated here -->
+            </div>
+            
+            <nav class="navigation">
+                <div class="nav-buttons">
+                    <button class="nav-btn" id="prevBtn">← Previous</button>
+                    <button class="nav-btn" id="nextBtn">Next →</button>
+                </div>
+                <div class="slide-counter" id="slideCounter">Slide 1 of 1</div>
+            </nav>
+        </main>
+    </div>
+
+    <script>
+        const presentationData = {
+            slides: [
+                {
+                    id: 1,
+                    title: "Cover",
+                    content: `
+                        <div class="slide-header" style="padding-top: 100px;">
+                            <div class="slide-title" style="font-size: 64px;">ZERO THREAT CORPORATION</div>
+                            <div class="slide-subtitle" style="font-size: 36px; margin-top: 20px;">PFE BOOK 2025-2026</div>
+
+                            <div class="slide-tagline" style="font-size: 20px; margin-top: 40px; color: var(--color-primary);">
+                                100% REMOTE WORK
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 2,
+                    title: "Table of Contents",
+                    content: `
+                        <h2 class="section-title">TABLE OF CONTENTS</h2>
+                        <div class="toc-list">
+                            <div class="toc-item">01 • ABOUT US</div>
+                            <div class="toc-item">02 • HOW TO APPLY</div>
+                            <div class="toc-item">03 • SUBJECTS</div>
+                        </div>
+                    `
+                },
+                {
+                    id: 3,
+                    title: "About Us",
+                    content: `
+                        <h2 class="section-title">WHO WE ARE</h2>
+                        <p class="section-description">Welcome to Zero Threat Corporation (ZTC), Tunisia's leader in cybersecurity.</p>
+                        
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <div class="info-card-title">📍 Location</div>
+                                <div class="info-card-content">Centre Misk, Rue 8366<br>Montplaisir, Tunis, Tunisia</div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-card-title">📞 Contact</div>
+                                <div class="info-card-content">
+                                    Phone: +216 24 184 591<br>
+                                    Email: contact@ztc.tn<br>
+                                    Web: www.ztc.tn
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="section-title" style="margin-top: 40px; font-size: 20px;">Our Experience</h3>
+                        <ul class="experience-list">
+                            <li>2+ years in operational security</li>
+                            <li>50+ servers monitored 24/7</li>
+                            <li>ISO 27001, PCI DSS, NIST certified</li>
+                            <li>University partnerships across region</li>
+                        </ul>
+                    `
+                },
+                {
+                    id: 4,
+                    title: "Our Services",
+                    content: `
+                        <h2 class="section-title">OUR SERVICES</h2>
+                        <div class="services-grid">
+                            <div class="service-card">
+                                <div class="service-icon">🔍</div>
+                                <div class="service-title">SECURITY AUDITS</div>
+                                <div class="service-description">Technical assessments, compliance audits, security posture analysis</div>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">🛡️</div>
+                                <div class="service-title">ENDPOINT &amp; NETWORK PROTECTION</div>
+                                <div class="service-description">Antivirus, EDR, centralized management, network segmentation</div>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">🚨</div>
+                                <div class="service-title">24/7 SOC</div>
+                                <div class="service-description">Real-time detection, incident response, forensics, threat intelligence</div>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">☁️</div>
+                                <div class="service-title">DEVSECOPS &amp; CLOUD</div>
+                                <div class="service-description">Secure CI/CD, cloud governance, IaC security, API management</div>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">⚙️</div>
+                                <div class="service-title">APPLICATION SECURITY</div>
+                                <div class="service-description">Penetration testing, DAST/IAST scanning, secure code review</div>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">📚</div>
+                                <div class="service-title">TRAINING &amp; AWARENESS</div>
+                                <div class="service-description">Security workshops, certification preparation, awareness campaigns</div>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">✅</div>
+                                <div class="service-title">COMPLIANCE &amp; GOVERNANCE</div>
+                                <div class="service-description">GDPR, ISO 27001, PCI DSS, regulatory documentation</div>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">💻</div>
+                                <div class="service-title">DEVELOPMENT</div>
+                                <div class="service-description">Development of security tools and products</div>
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 5,
+                    title: "Our Values",
+                    content: `
+                        <h2 class="section-title">OUR VALUES</h2>
+                        <div class="values-list">
+                            <div class="value-item">
+                                <div class="value-title">🌍 LOCAL EXPERTISE &amp; INTERNATIONAL STANDARDS</div>
+                                <div class="value-description">Deep Tunisian market understanding + global security best practices</div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-title">⚡ REACTIVITY &amp; PROXIMITY</div>
+                                <div class="value-description">24/7 support in French &amp; English. Real people, local response.</div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-title">🚀 CONTINUOUS INNOVATION</div>
+                                <div class="value-description">Evolving curriculum monthly to match market demands</div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-title">🔐 GUARANTEED CONFIDENTIALITY</div>
+                                <div class="value-description">Your data protected with enterprise-grade security</div>
+                            </div>
+                        </div>
+                    `
+                },
+                /*
+                {
+                    id: 6,
+                    title: "How to Apply - Career Paths",
+                    content: `
+                        <h2 class="section-title">STEP 1: CHOOSE YOUR PATH</h2>
+                        <div class="career-paths-grid">
+                            <div class="career-card">
+                                <div class="career-icon">🔒</div>
+                                <div class="career-title">CYBERSECURITY SPECIALIST</div>
+                                <div class="career-detail">30 subjects | 9-12 months</div>
+                                <div class="career-detail">Career: Security Engineer, SOC Analyst</div>
+                                <div class="career-detail">Salary: €45K-65K</div>
+                                <div class="career-cost">€400</div>
+                            </div>
+                            <div class="career-card">
+                                <div class="career-icon">☁️</div>
+                                <div class="career-title">CLOUD &amp; DEVOPS ENGINEER</div>
+                                <div class="career-detail">25 subjects | 9-12 months</div>
+                                <div class="career-detail">Career: DevOps Engineer, Cloud Architect</div>
+                                <div class="career-detail">Salary: €50K-70K</div>
+                                <div class="career-cost">€500</div>
+                            </div>
+                            <div class="career-card">
+                                <div class="career-icon">🏢</div>
+                                <div class="career-title">FULL STACK ENTERPRISE</div>
+                                <div class="career-detail">45 subjects | 12-15 months</div>
+                                <div class="career-detail">Career: Solutions Architect, CTO</div>
+                                <div class="career-detail">Salary: €70K-100K+</div>
+                                <div class="career-cost">€700</div>
+                            </div>
+                            <div class="career-card">
+                                <div class="career-icon">💰</div>
+                                <div class="career-title">REVENUE PRODUCTS TRACK</div>
+                                <div class="career-detail">5 subjects | 6-9 months</div>
+                                <div class="career-detail">5% revenue share</div>
+                                <div class="career-detail">0.1-0.5% equity</div>
+                                <div class="career-cost">PAID + EQUITY</div>
+                            </div>
+                        </div>
+                    `
+                },*/
+                {
+                    id: 7,
+                    title: "How to Apply - Process",
+                    content: `
+                        <h2 class="section-title">STEPS 2 &amp; 3: APPLICATION PROCESS</h2>
+                        <div class="steps-list">
+                            <div class="step-item">
+                                <div class="step-number">01</div>
+                                <div class="step-title">Register Online</div>
+                                <div class="step-description">Visit www.ztc.tn and complete the initial registration form</div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">02</div>
+                                <div class="step-title">Send your Application</div>
+                                <div class="step-description">Email us your CV and cover letter with the subject "PFE + Reference of Subject" at contact@ztc.tn</div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">03</div>
+                                <div class="step-title">Technical Assessment</div>
+                                <div class="step-description">We will review your application and schedule a technical interview</div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">04</div>
+                                <div class="step-title">Interview</div>
+                                <div class="step-description">Meet with our technical team to discuss your goals and fit for the subject</div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">05</div>
+                                <div class="step-title">Decision &amp; Onboarding</div>
+                                <div class="step-description">Receive decision within 7 days and begin your internship</div>
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 8,
+                    title: "Eligibility & Key Info",
+                    content: `
+                        <h2 class="section-title">ELIGIBILITY &amp; KEY INFORMATION</h2>
+                        
+                        <div class="info-grid" style="margin-bottom: 40px;">
+                            <div class="info-card" style="background-color: var(--color-bg-3);">
+                                <div class="info-card-title">✅ Must-Have Criteria</div>
+                                <div class="info-card-content">
+                                    • IT or Engineering University student or graduate (Bac+3 or Bac+5) <br>
+                                    • Basic programming knowledge<br>
+                                    • Passion for cybersecurity<br>
+                                    • French or English proficiency<br>
+                                    • Available 4-6 months
+                                </div>
+                            </div>
+                            <div class="info-card" style="background-color: var(--color-bg-4);">
+                                <div class="info-card-title">⭐ Preferred Skills</div>
+                                <div class="info-card-content">
+                                    • Linux/Unix experience<br>
+                                    • Networking knowledge<br>
+                                    • Previous security projects<br>
+                                    • Cloud platform familiarity<br>
+                                    • DevOps tools experience
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="section-title" style="font-size: 20px;">Key Information</h3>
+                        <div class="values-list">
+                            <div class="value-item">
+                                <div class="value-title">📅 Application Deadline: December 30, 2025</div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-title">🏠 Remote Work: Available with flexible schedule</div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-title">⏱️ Duration: 5-6 months typical (varies by path)</div>
+                            </div>
+                        </div>
+                    `
+                },
+                /*{
+                    id: 9,
+                    title: "Subjects Overview - Part 1",
+                    content: `
+                        <h2 class="section-title">CORE CYBERSECURITY (15 SUBJECTS)</h2>
+                        <p class="section-description">68 months total • Intermediate → Advanced • Foundation of security expertise</p>
+                        
+                        <div class="subjects-grid">
+                            <div class="subject-item">SME Infrastructure Security</div>
+                            <div class="subject-item">Multi-Factor Authentication</div>
+                            <div class="subject-item">Phishing Prevention</div>
+                            <div class="subject-item">Data Protection &amp; Compliance</div>
+                            <div class="subject-item">Payment System Security (PCI-DSS)</div>
+                            <div class="subject-item">Zero Trust Architecture</div>
+                            <div class="subject-item">Incident Detection &amp; Response (EDR/SOC)</div>
+                            <div class="subject-item">Cloud Security Migration</div>
+                            <div class="subject-item">Cryptography &amp; Encryption</div>
+                            <div class="subject-item">SCADA &amp; Industrial Control</div>
+                            <div class="subject-item">Zero-Day Threat Detection</div>
+                            <div class="subject-item">Web App Security (OWASP)</div>
+                            <div class="subject-item">Security Audit &amp; Assessment</div>
+                            <div class="subject-item">Identity &amp; Access Management</div>
+                            <div class="subject-item">Ransomware Prevention</div>
+                        </div>
+                    `
+                },
+                {
+                    id: 10,
+                    title: "Subjects Overview - Part 2",
+                    content: `
+                        <h2 class="section-title">CYBERSECURITY × AI (10 SUBJECTS)</h2>
+                        <p class="section-description">82 months total • Advanced • AI-powered security solutions</p>
+                        
+                        <div class="subjects-grid">
+                            <div class="subject-item">Network Anomaly Detection (ML)</div>
+                            <div class="subject-item">User Behavior Analytics (UEBA)</div>
+                            <div class="subject-item">Threat Prediction via ML</div>
+                            <div class="subject-item">Automated Incident Response (SOAR)</div>
+                            <div class="subject-item">Malware Analysis via Deep Learning</div>
+                            <div class="subject-item">Biometric Authentication (AI)</div>
+                            <div class="subject-item">Real-Time Fraud Detection</div>
+                            <div class="subject-item">NLP for Security</div>
+                            <div class="subject-item">Identity Spoofing Prevention</div>
+                            <div class="subject-item">Intelligent SOC Orchestration</div>
+                        </div>
+                    `
+                },
+                {
+                    id: 11,
+                    title: "Subjects Overview - Part 3",
+                    content: `
+                        <h2 class="section-title">DEVELOPMENT (5 SUBJECTS)</h2>
+                        <p class="section-description">32 months total • Advanced • Build custom security tools</p>
+                        
+                        <div class="subjects-grid">
+                            <div class="subject-item">Network Monitoring Probes Development</div>
+                            <div class="subject-item">Secure API Development</div>
+                            <div class="subject-item">VPN Solutions &amp; Tunneling</div>
+                            <div class="subject-item">Microservices SOC Architecture</div>
+                            <div class="subject-item">Packet Analysis Tool Development</div>
+                        </div>
+                        
+                        <h2 class="section-title" style="margin-top: 40px;">DEVSECOPS (5 SUBJECTS)</h2>
+                        <p class="section-description">27 months total • Advanced • Integrate security into DevOps</p>
+                        
+                        <div class="subjects-grid">
+                            <div class="subject-item">CI/CD Security Integration</div>
+                            <div class="subject-item">Secret Management in DevOps</div>
+                            <div class="subject-item">Container Security &amp; Hardening</div>
+                            <div class="subject-item">Infrastructure as Code Security</div>
+                            <div class="subject-item">Compliance Automation</div>
+                        </div>
+                    `
+                },
+                {
+                    id: 12,
+                    title: "Subjects Overview - Part 4",
+                    content: `
+                        <h2 class="section-title">DEVOPS (5 SUBJECTS)</h2>
+                        <p class="section-description">32 months total • Advanced • Modern infrastructure operations</p>
+                        
+                        <div class="subjects-grid">
+                            <div class="subject-item">Kubernetes Orchestration &amp; Security</div>
+                            <div class="subject-item">Monitoring &amp; Observability Stack</div>
+                            <div class="subject-item">Load Balancing &amp; High Availability</div>
+                            <div class="subject-item">Backup &amp; Disaster Recovery</div>
+                            <div class="subject-item">Performance Tuning</div>
+                        </div>
+                        
+                        <h2 class="section-title" style="margin-top: 40px;">NETWORKING (5 SUBJECTS)</h2>
+                        <p class="section-description">33 months total • Advanced • Enterprise networking expertise</p>
+                        
+                        <div class="subjects-grid">
+                            <div class="subject-item">Enterprise Network Architecture</div>
+                            <div class="subject-item">QoS Management &amp; Traffic Control</div>
+                            <div class="subject-item">VPN Inter-Site &amp; Mesh Networking</div>
+                            <div class="subject-item">Software-Defined Networking (SDN)</div>
+                            <div class="subject-item">Network Segmentation &amp; Microsegmentation</div>
+                        </div>
+                    `
+                },
+                {
+                    id: 13,
+                    title: "Subjects Overview - Part 5",
+                    content: `
+                        <h2 class="section-title">REVENUE PRODUCTS (5 SUBJECTS)</h2>
+                        <p class="section-description">25-30 months total • Build commercial security products with revenue share</p>
+                        
+                        <div class="services-grid">
+                            <div class="service-card" style="background-color: var(--color-bg-8);">
+                                <div class="service-icon">🎯</div>
+                                <div class="service-title">TIP - Threat Intelligence Platform</div>
+                                <div class="service-description">Real-time threat intelligence aggregation and analysis platform</div>
+                            </div>
+                            <div class="service-card" style="background-color: var(--color-bg-8);">
+                                <div class="service-icon">✅</div>
+                                <div class="service-title">ComplianceBot - Scanner</div>
+                                <div class="service-description">Automated compliance scanning and reporting tool</div>
+                            </div>
+                            <div class="service-card" style="background-color: var(--color-bg-8);">
+                                <div class="service-icon">📊</div>
+                                <div class="service-title">MaaS Dashboard Pro</div>
+                                <div class="service-description">Comprehensive monitoring-as-a-service platform</div>
+                            </div>
+                            <div class="service-card" style="background-color: var(--color-bg-8);">
+                                <div class="service-icon">🔌</div>
+                                <div class="service-title">SecureAPI - Gateway</div>
+                                <div class="service-description">Enterprise API security and management gateway</div>
+                            </div>
+                            <div class="service-card" style="background-color: var(--color-bg-8);">
+                                <div class="service-icon">🎣</div>
+                                <div class="service-title">PhishGuard - Simulator</div>
+                                <div class="service-description">Phishing simulation and training platform</div>
+                            </div>
+                        </div>
+                    `
+                },*/
+                {
+                    id: 14,
+                    title: "ZTC-SEC-01: SME Infrastructure Security",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-01</div>
+                            <h2 class="subject-title-detail">SME INFRASTRUCTURE SECURITY</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 4-6 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement a secure infrastructure architecture for a typical Tunisian SME, addressing real-world constraints including limited IT budget, legacy systems, and security awareness gaps.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Assess SME security posture and identify vulnerabilities</li>
+                                <li>Design network segmentation and firewall rules</li>
+                                <li>Set up hardened Linux servers (Ubuntu 22.04 LTS)</li>
+                                <li>Implement user access controls and management</li>
+                                <li>Configure web server security (Nginx hardening)</li>
+                                <li>Harden database security (PostgreSQL)</li>
+                                <li>Deploy monitoring and alerting systems</li>
+                                <li>Create security policies and documentation</li>
+                                <li>Perform penetration testing and security audits</li>
+                                <li>Train SME staff on security best practices</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Ubuntu Server 22.04 | UFW Firewall | Nginx | PostgreSQL | Docker | Terraform | Prometheus | Grafana | OpenSSL | Bash/Python
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 15,
+                    title: "ZTC-SEC-02: Multi-Factor Authentication",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-02</div>
+                            <h2 class="subject-title-detail">MULTI-FACTOR AUTHENTICATION (MFA)</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 4-6 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Build a comprehensive Multi-Factor Authentication (MFA) system supporting multiple authentication factors (TOTP, SMS, biometric) integrated with enterprise applications and identity management systems.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement Time-based One-Time Password (TOTP) system</li>
+                                <li>Integrate SMS-based 2FA with Twilio or similar APIs</li>
+                                <li>Develop biometric authentication (fingerprint, face recognition)</li>
+                                <li>Create user enrollment and setup workflows</li>
+                                <li>Build recovery mechanisms (backup codes, recovery keys)</li>
+                                <li>Implement MFA for web and mobile applications</li>
+                                <li>Set up authentication dashboards and reporting</li>
+                                <li>Test against common attack vectors and bypasses</li>
+                                <li>Create comprehensive user and admin documentation</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python (FastAPI) | PostgreSQL | TOTP libraries (PyOTP) | Twilio API | React | Docker | Fido2/WebAuthn | JWT | LDAP
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 16,
+                    title: "ZTC-SEC-03: Phishing Prevention & Training",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-03</div>
+                            <h2 class="subject-title-detail">PHISHING PREVENTION &amp; TRAINING</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 4-6 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design a comprehensive anti-phishing strategy including technical controls, employee awareness training, and incident response procedures for enterprise organizations combating phishing attacks.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement email filtering and anti-spoofing (SPF, DKIM, DMARC)</li>
+                                <li>Build phishing simulation platform with campaign builder</li>
+                                <li>Create interactive security awareness training modules</li>
+                                <li>Develop metrics dashboard (click rates, reporting rates improvement)</li>
+                                <li>Set up automated response procedures</li>
+                                <li>Design security policy templates</li>
+                                <li>Conduct vulnerability assessments</li>
+                                <li>Create incident response playbooks</li>
+                                <li>Train security teams on phishing tactics</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | Django/FastAPI | PostgreSQL | React | SendGrid/AWS SES | Stripe | Docker | SPF/DKIM/DMARC | LDAP/AD
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 17,
+                    title: "ZTC-SEC-04: Data Protection & Compliance",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-04</div>
+                            <h2 class="subject-title-detail">DATA PROTECTION &amp; COMPLIANCE</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 4-6 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement data protection frameworks (GDPR, CCPA) with encryption, access controls, audit logging, and compliance monitoring for enterprise data.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Classify data and identify Personally Identifiable Information (PII)</li>
+                                <li>Implement data encryption (at-rest and in-transit)</li>
+                                <li>Design access control policies (RBAC, ABAC)</li>
+                                <li>Set up audit logging and monitoring</li>
+                                <li>Create data retention policies</li>
+                                <li>Implement right-to-be-forgotten procedures</li>
+                                <li>Build compliance dashboards and reporting</li>
+                                <li>Conduct data breach simulations</li>
+                                <li>Create compliance documentation and policies</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | PostgreSQL | OpenSSL | HashiCorp Vault | ELK Stack | Docker | TLS/SSL | AES-256 | PostgreSQL Row-Level Security
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 18,
+                    title: "ZTC-SEC-05: Payment System Security",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-05</div>
+                            <h2 class="subject-title-detail">PAYMENT SYSTEM SECURITY (PCI-DSS)</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 4-6 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement PCI-DSS compliant payment processing systems for e-commerce and point-of-sale applications with secure tokenization and encryption.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement secure payment gateways</li>
+                                <li>Set up tokenization systems for card data</li>
+                                <li>Configure PCI-compliant network segmentation</li>
+                                <li>Implement secure logging and monitoring</li>
+                                <li>Set up encryption for cardholder data (CHD)</li>
+                                <li>Design secure API endpoints for payments</li>
+                                <li>Perform vulnerability assessments</li>
+                                <li>Create PCI-DSS compliance documentation</li>
+                                <li>Test against OWASP Top 10 vulnerabilities</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | Node.js | PostgreSQL | Stripe/Square APIs | Tokenization libraries | Docker | TLS/SSL | Kubernetes | AWS/OVH
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 19,
+                    title: "ZTC-SEC-06: Zero Trust Architecture",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-06</div>
+                            <h2 class="subject-title-detail">ZERO TRUST ARCHITECTURE</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 4-6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement a complete Zero Trust Network Access (ZTNA) architecture eliminating implicit trust and requiring continuous verification for all users and devices.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design Zero Trust security model and principles</li>
+                                <li>Implement identity verification (Keycloak/Okta)</li>
+                                <li>Deploy microsegmentation rules</li>
+                                <li>Set up device posture checking and validation</li>
+                                <li>Implement continuous authentication</li>
+                                <li>Build policy enforcement points</li>
+                                <li>Create dashboards and monitoring</li>
+                                <li>Perform threat modeling exercises</li>
+                                <li>Test against advanced attacks and lateral movement</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | Django/FastAPI | PostgreSQL | Keycloak | Suricata | Kubernetes | Docker | HashiCorp Consul | Envoy Proxy | OAuth 2.0
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 20,
+                    title: "ZTC-SEC-07: Incident Detection & Response",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-07</div>
+                            <h2 class="subject-title-detail">INCIDENT DETECTION &amp; RESPONSE (EDR/SOC)</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 4-6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Build an Endpoint Detection and Response (EDR) system integrated with Security Operations Center (SOC) capabilities for real-time threat detection and automated incident response.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Deploy EDR agents on endpoints (Windows, Linux, Mac)</li>
+                                <li>Implement behavior-based detection and alerting</li>
+                                <li>Build threat correlation engine</li>
+                                <li>Create automated response playbooks</li>
+                                <li>Set up SOC dashboards and case management</li>
+                                <li>Implement incident ticketing system</li>
+                                <li>Create alert tuning and tuning procedures</li>
+                                <li>Design investigation workflows</li>
+                                <li>Build reporting dashboards for management</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | Wazuh | Osquery | Falco | Elasticsearch | Kibana | PostgreSQL | Docker | Kubernetes | Apache Kafka
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 21,
+                    title: "ZTC-SEC-08: Cloud Security Migration",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-08</div>
+                            <h2 class="subject-title-detail">CLOUD SECURITY MIGRATION</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 4-6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Plan and execute secure migration of on-premise systems to cloud platforms (AWS, Azure, GCP) with proper security controls, compliance, and monitoring.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Assess current on-premise security posture</li>
+                                <li>Design cloud security architecture</li>
+                                <li>Implement identity and access management (IAM)</li>
+                                <li>Set up network security (VPCs, security groups)</li>
+                                <li>Configure encryption and key management</li>
+                                <li>Implement cloud-native logging and monitoring</li>
+                                <li>Design disaster recovery procedures</li>
+                                <li>Perform security testing and validation</li>
+                                <li>Create migration playbooks and runbooks</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                AWS/Azure/GCP SDKs | Terraform | Python | HashiCorp Vault | CloudTrail/Azure Monitor | Docker | Kubernetes | CloudFormation
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 22,
+                    title: "ZTC-SEC-09: Cryptography & Encryption",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-09</div>
+                            <h2 class="subject-title-detail">CRYPTOGRAPHY &amp; ENCRYPTION</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 4-6 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement cryptographic solutions for data protection, including symmetric/asymmetric encryption, digital signatures, and key management systems.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement symmetric encryption (AES-256)</li>
+                                <li>Implement asymmetric encryption (RSA, ECC)</li>
+                                <li>Design key management systems (KMS)</li>
+                                <li>Implement digital signatures and certificates</li>
+                                <li>Build secure password hashing (Argon2, bcrypt)</li>
+                                <li>Set up certificate authorities (CA)</li>
+                                <li>Implement TLS/SSL certificates</li>
+                                <li>Design key rotation procedures</li>
+                                <li>Test cryptographic implementations against attacks</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                OpenSSL | Python (cryptography library) | libsodium | GnuPG | HashiCorp Vault | PostgreSQL | PKI tools | Docker
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 23,
+                    title: "ZTC-SEC-10: SCADA & Industrial Control Security",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-10</div>
+                            <h2 class="subject-title-detail">SCADA &amp; INDUSTRIAL CONTROL SECURITY</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement security controls for industrial control systems (ICS) and SCADA systems protecting critical infrastructure from cyber attacks.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Audit SCADA/ICS systems for vulnerabilities</li>
+                                <li>Design air-gap networks and network architecture</li>
+                                <li>Implement anomaly detection for SCADA</li>
+                                <li>Set up OPC UA security</li>
+                                <li>Deploy intrusion detection (IDS)</li>
+                                <li>Create incident response playbooks</li>
+                                <li>Test with industrial protocols (Modbus, MQTT)</li>
+                                <li>Design secure remote access solutions</li>
+                                <li>Create safety and operational procedures</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | C++ | Modbus/MQTT | Wireshark | GNS3 | Docker | OPC UA | Grafana | Prometheus | Suricata
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 24,
+                    title: "ZTC-SEC-11: Zero-Day Threat Detection",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-11</div>
+                            <h2 class="subject-title-detail">ZERO-DAY THREAT DETECTION</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Develop machine learning models and behavioral analysis techniques to detect previously unknown (zero-day) threats using anomaly detection and threat intelligence.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Build machine learning models for anomaly detection</li>
+                                <li>Implement behavioral analysis systems</li>
+                                <li>Create threat intelligence pipelines</li>
+                                <li>Build early warning systems</li>
+                                <li>Implement sandboxing environments</li>
+                                <li>Create automated threat hunting procedures</li>
+                                <li>Design detections for common attack patterns</li>
+                                <li>Test against real-world exploits and samples</li>
+                                <li>Create threat reports and analysis</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | TensorFlow | Scikit-Learn | Elasticsearch | Kafka | Falco | Docker | YARA | Machine Learning libraries | Sandbox tools
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 25,
+                    title: "ZTC-SEC-12: Web Application Security",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-12</div>
+                            <h2 class="subject-title-detail">WEB APPLICATION SECURITY (OWASP TOP 10)</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement comprehensive security controls for web applications addressing OWASP Top 10 vulnerabilities including injection, broken authentication, and data exposure.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement input validation and sanitization</li>
+                                <li>Design authentication and session management</li>
+                                <li>Implement access controls (RBAC, ABAC)</li>
+                                <li>Set up output encoding</li>
+                                <li>Implement CSRF and CORS protection</li>
+                                <li>Design security logging and monitoring</li>
+                                <li>Perform vulnerability scanning</li>
+                                <li>Conduct penetration testing</li>
+                                <li>Create secure coding guidelines</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python (Django/FastAPI) | React | PostgreSQL | OWASP ZAP | Burp Suite | Docker | ModSecurity WAF | Kubernetes | TLS/SSL
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 26,
+                    title: "ZTC-SEC-13: Security Audit & Assessment",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-13</div>
+                            <h2 class="subject-title-detail">SECURITY AUDIT &amp; ASSESSMENT</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Plan and execute security audits and assessments evaluating IT systems against industry standards (ISO 27001, NIST), generating audit reports with findings and recommendations.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design audit scope and methodology</li>
+                                <li>Perform system and process assessments</li>
+                                <li>Interview stakeholders</li>
+                                <li>Test security controls</li>
+                                <li>Analyze configurations</li>
+                                <li>Evaluate compliance with standards</li>
+                                <li>Create detailed audit reports with findings</li>
+                                <li>Develop remediation plans with timelines</li>
+                                <li>Track and validate remediation progress</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | Nessus | OpenVAS | Qualys | Lynis | Nmap | Python scripting | Excel/Word | Documentation tools
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 27,
+                    title: "ZTC-SEC-14: Identity & Access Management",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-14</div>
+                            <h2 class="subject-title-detail">IDENTITY &amp; ACCESS MANAGEMENT (IAM)</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement enterprise identity and access management systems with Single Sign-On (SSO), Multi-Factor Authentication, and role-based access controls.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design enterprise IAM architecture</li>
+                                <li>Implement directory services (LDAP/Active Directory)</li>
+                                <li>Set up Single Sign-On (SSO) with Keycloak/Okta</li>
+                                <li>Implement Multi-Factor Authentication</li>
+                                <li>Design role-based access controls (RBAC)</li>
+                                <li>Implement attribute-based access controls (ABAC)</li>
+                                <li>Set up audit logging and reporting</li>
+                                <li>Create user provisioning workflows</li>
+                                <li>Design compliance and governance reporting</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | Keycloak | Okta | LDAP | Active Directory | PostgreSQL | OpenLDAP | Docker | SAML/OAuth2 | JWT
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 28,
+                    title: "ZTC-SEC-15: Ransomware Prevention & Recovery",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SEC-15</div>
+                            <h2 class="subject-title-detail">RANSOMWARE PREVENTION &amp; RECOVERY</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design comprehensive ransomware defense strategies including prevention controls, detection mechanisms, backup/recovery procedures, and incident response playbooks.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design ransomware prevention architecture</li>
+                                <li>Implement endpoint protection and behavioral analysis</li>
+                                <li>Set up behavioral analysis detection</li>
+                                <li>Design immutable backups</li>
+                                <li>Create backup and recovery procedures</li>
+                                <li>Implement network segmentation</li>
+                                <li>Design backup validation procedures</li>
+                                <li>Create incident response playbooks</li>
+                                <li>Test recovery procedures and timelines</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | YARA rules | Elasticsearch | Kafka | Docker | Veeam/Commvault | Ransomware analysis tools | Zeek | Suricata
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 29,
+                    title: "ZTC-AI-01: Network Anomaly Detection (ML)",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-AI-01</div>
+                            <h2 class="subject-title-detail">NETWORK ANOMALY DETECTION (ML)</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 7 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Build machine learning models for real-time detection of network anomalies including intrusions, DDoS attacks, and suspicious patterns using unsupervised and supervised learning.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Collect and prepare network traffic data</li>
+                                <li>Build feature engineering pipelines</li>
+                                <li>Implement unsupervised learning (Isolation Forest, Autoencoders)</li>
+                                <li>Implement supervised learning models (Random Forest, SVM)</li>
+                                <li>Build real-time detection system</li>
+                                <li>Create alerting mechanisms</li>
+                                <li>Implement false positive tuning</li>
+                                <li>Build visualization dashboards</li>
+                                <li>Validate against known attack samples</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | TensorFlow | Scikit-Learn | Pandas | NumPy | Elasticsearch | Kafka | Zeek | Docker | Grafana | PostgreSQL
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 30,
+                    title: "ZTC-AI-02: User Behavior Analytics (UEBA)",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-AI-02</div>
+                            <h2 class="subject-title-detail">USER BEHAVIOR ANALYTICS (UEBA)</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 7 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Develop machine learning models for User and Entity Behavior Analytics detecting insider threats and compromised accounts by identifying deviations from normal behavior patterns.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Build user behavior profiles</li>
+                                <li>Implement baseline creation algorithms</li>
+                                <li>Build anomaly detection models</li>
+                                <li>Create risk scoring system</li>
+                                <li>Implement session analytics</li>
+                                <li>Build real-time alerting</li>
+                                <li>Create investigation workflows</li>
+                                <li>Build visualization dashboards</li>
+                                <li>Validate against insider threat scenarios</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | TensorFlow | Scikit-Learn | SQL | Elasticsearch | Kafka | Spark | Docker | Grafana | PostgreSQL
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 31,
+                    title: "ZTC-AI-03: Threat Prediction via ML",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-AI-03</div>
+                            <h2 class="subject-title-detail">THREAT PREDICTION VIA ML</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 8 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Build predictive models to forecast future security threats based on historical attack patterns, emerging vulnerabilities, and threat intelligence data.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Collect and prepare threat intelligence data</li>
+                                <li>Build feature engineering pipelines</li>
+                                <li>Implement time-series forecasting models</li>
+                                <li>Build classification models for threat types</li>
+                                <li>Create early warning systems</li>
+                                <li>Build threat scoring algorithms</li>
+                                <li>Implement notification systems</li>
+                                <li>Create threat reports</li>
+                                <li>Test against historical attack data</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | TensorFlow | Prophet | ARIMA | Scikit-Learn | Pandas | PostgreSQL | Kafka | Docker | Grafana
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 32,
+                    title: "ZTC-AI-04: Automated Incident Response (SOAR)",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-AI-04</div>
+                            <h2 class="subject-title-detail">AUTOMATED INCIDENT RESPONSE (SOAR)</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 8 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement a Security Orchestration, Automation and Response (SOAR) platform enabling automated threat response and orchestration of security tools.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design SOAR platform architecture</li>
+                                <li>Build playbook engine</li>
+                                <li>Implement API integrations (50+ security tools)</li>
+                                <li>Create workflow automation</li>
+                                <li>Build decision trees</li>
+                                <li>Implement feedback loops</li>
+                                <li>Create incident tracking</li>
+                                <li>Build audit logging</li>
+                                <li>Design user interfaces</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python (FastAPI) | Node.js | PostgreSQL | Celery | Redis | Docker | Kubernetes | REST/GraphQL APIs | React
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 33,
+                    title: "ZTC-AI-05: Malware Analysis via Deep Learning",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-AI-05</div>
+                            <h2 class="subject-title-detail">MALWARE ANALYSIS VIA DEEP LEARNING</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 8 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Develop deep learning models to classify and identify malware using static and dynamic analysis techniques, enabling automated malware detection and family classification.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Collect malware samples</li>
+                                <li>Implement static analysis (PE headers, strings, imports)</li>
+                                <li>Implement dynamic analysis (behavior analysis)</li>
+                                <li>Build feature extraction pipelines</li>
+                                <li>Implement CNN models for image-based analysis</li>
+                                <li>Build RNN models for sequence analysis</li>
+                                <li>Create classification models</li>
+                                <li>Build visualization tools</li>
+                                <li>Deploy detection system</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | TensorFlow | Keras | YARA | Radare2 | IDA Pro | Cuckoo Sandbox | Pandas | Docker | Elasticsearch
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 34,
+                    title: "ZTC-AI-06: Biometric Authentication (AI)",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-AI-06</div>
+                            <h2 class="subject-title-detail">BIOMETRIC AUTHENTICATION (AI)</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 7 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement AI-powered biometric authentication systems supporting fingerprint, face recognition, iris scanning, and behavioral biometrics for secure access control.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement face recognition (FaceNet, OpenFace)</li>
+                                <li>Implement fingerprint recognition</li>
+                                <li>Implement iris recognition</li>
+                                <li>Implement behavioral biometrics</li>
+                                <li>Build enrollment workflows</li>
+                                <li>Create matching algorithms</li>
+                                <li>Implement liveness detection</li>
+                                <li>Build authentication API</li>
+                                <li>Test against spoofing attacks</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | TensorFlow | OpenCV | Scikit-Learn | LibFaceAPI | Docker | PostgreSQL | FastAPI | React | OpenFace
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 35,
+                    title: "ZTC-AI-07: Real-Time Fraud Detection",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-AI-07</div>
+                            <h2 class="subject-title-detail">REAL-TIME FRAUD DETECTION</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 7 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Build real-time fraud detection systems using machine learning to identify suspicious transactions, account activities, and payment fraud patterns.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Collect and prepare transaction data</li>
+                                <li>Build feature engineering pipelines</li>
+                                <li>Implement fraud detection models (Random Forest, XGBoost)</li>
+                                <li>Create scoring algorithms</li>
+                                <li>Build real-time processing (Kafka, Spark)</li>
+                                <li>Implement alerting systems</li>
+                                <li>Create customer notification workflows</li>
+                                <li>Build analytics dashboards</li>
+                                <li>Test against fraud scenarios</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | TensorFlow | XGBoost | Scikit-Learn | Kafka | Spark | Redis | PostgreSQL | Docker | Grafana
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 36,
+                    title: "ZTC-AI-08: Natural Language Processing for Security",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-AI-08</div>
+                            <h2 class="subject-title-detail">NATURAL LANGUAGE PROCESSING FOR SECURITY</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 7 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Develop NLP systems for security threat analysis including threat intelligence extraction, malicious email detection, code analysis, and automated threat reports.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement text classification models</li>
+                                <li>Build threat intelligence extraction</li>
+                                <li>Implement sentiment analysis</li>
+                                <li>Build phishing email detection</li>
+                                <li>Implement code analysis systems</li>
+                                <li>Create automated threat reporting</li>
+                                <li>Build visualization tools</li>
+                                <li>Test against real threats</li>
+                                <li>Deploy detection system</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | HuggingFace | SpaCy | NLTK | TensorFlow | GPT/LLMs | Docker | PostgreSQL | FastAPI | Elasticsearch
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 37,
+                    title: "ZTC-AI-09: Identity Spoofing Prevention",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-AI-09</div>
+                            <h2 class="subject-title-detail">IDENTITY SPOOFING PREVENTION</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 7 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement AI-powered systems to prevent identity spoofing and account takeover attacks using multi-modal biometrics and behavioral analysis.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement multi-modal biometric fusion</li>
+                                <li>Build liveness detection systems</li>
+                                <li>Implement behavioral biometrics</li>
+                                <li>Create device fingerprinting</li>
+                                <li>Build anomaly detection models</li>
+                                <li>Implement continuous authentication</li>
+                                <li>Create risk scoring systems</li>
+                                <li>Build investigation tools</li>
+                                <li>Test against spoofing attacks</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | TensorFlow | OpenCV | Scikit-Learn | PostgreSQL | Docker | FastAPI | Keras | Pandas
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 38,
+                    title: "ZTC-AI-10: Intelligent SOC Orchestration",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-AI-10</div>
+                            <h2 class="subject-title-detail">INTELLIGENT SOC ORCHESTRATION</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 8 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design an intelligent Security Operations Center (SOC) orchestration system that prioritizes incidents, correlates alerts, and automates investigation using AI and machine learning.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Build alert correlation engine</li>
+                                <li>Implement intelligent prioritization</li>
+                                <li>Create incident deduplication</li>
+                                <li>Build root cause analysis</li>
+                                <li>Implement pattern recognition</li>
+                                <li>Create automation workflows</li>
+                                <li>Build SOC dashboards</li>
+                                <li>Implement feedback systems</li>
+                                <li>Deploy orchestration platform</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | Elasticsearch | Kafka | TensorFlow | PostgreSQL | Docker | Kubernetes | FastAPI | React | Grafana
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 39,
+                    title: "ZTC-DEV-01: Network Monitoring Probes",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-DEV-01</div>
+                            <h2 class="subject-title-detail">NETWORK MONITORING PROBES DEVELOPMENT</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Develop distributed network monitoring probes that collect, process, and transmit network traffic data for analysis and threat detection in enterprise environments.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design probe architecture</li>
+                                <li>Implement packet capture (libpcap, Zeek)</li>
+                                <li>Build data processing pipelines</li>
+                                <li>Implement secure transmission</li>
+                                <li>Create configuration management</li>
+                                <li>Build aggregation system</li>
+                                <li>Implement health monitoring</li>
+                                <li>Create dashboards</li>
+                                <li>Deploy in production</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                C/Python | Zeek | libpcap | Kafka | FastAPI | PostgreSQL | Docker | Prometheus | Grafana
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 40,
+                    title: "ZTC-DEV-02: Secure API Development",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-DEV-02</div>
+                            <h2 class="subject-title-detail">SECURE API DEVELOPMENT</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and develop secure APIs implementing OAuth 2.0, rate limiting, input validation, and security best practices for enterprise integration.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design API architecture</li>
+                                <li>Implement OAuth 2.0 authentication</li>
+                                <li>Build rate limiting systems</li>
+                                <li>Implement input validation</li>
+                                <li>Add output encoding</li>
+                                <li>Implement CORS securely</li>
+                                <li>Build API documentation</li>
+                                <li>Implement versioning</li>
+                                <li>Test against OWASP Top 10</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python (FastAPI) | Node.js (Express) | PostgreSQL | Redis | Docker | Kubernetes | OpenAPI/Swagger | JWT | OAuth libraries
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 41,
+                    title: "ZTC-DEV-03: VPN Solutions & Tunneling",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-DEV-03</div>
+                            <h2 class="subject-title-detail">VPN SOLUTIONS &amp; TUNNELING</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement VPN solutions and secure tunneling protocols for secure remote access, site-to-site connectivity, and encrypted communications.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement IPSec VPN</li>
+                                <li>Implement OpenVPN</li>
+                                <li>Implement WireGuard</li>
+                                <li>Build key exchange systems</li>
+                                <li>Implement encryption</li>
+                                <li>Create configuration management</li>
+                                <li>Build monitoring and logging</li>
+                                <li>Test failover mechanisms</li>
+                                <li>Deploy in production</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                C | OpenSSL | OpenVPN | WireGuard | IPSec | Linux | Docker | Kubernetes | Python | Prometheus
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 42,
+                    title: "ZTC-DEV-04: Microservices SOC Architecture",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-DEV-04</div>
+                            <h2 class="subject-title-detail">MICROSERVICES SOC ARCHITECTURE</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design a modern Security Operations Center (SOC) built with microservices architecture enabling scalability, resilience, and independent service deployment.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design microservices architecture</li>
+                                <li>Implement alert processing service</li>
+                                <li>Implement case management service</li>
+                                <li>Implement intelligence service</li>
+                                <li>Implement orchestration service</li>
+                                <li>Build API gateway</li>
+                                <li>Implement service mesh (Istio)</li>
+                                <li>Build monitoring and logging</li>
+                                <li>Deploy on Kubernetes</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python (FastAPI) | Node.js | PostgreSQL | MongoDB | Kafka | Docker | Kubernetes | Istio | Prometheus | Jaeger
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 43,
+                    title: "ZTC-DEV-05: Packet Analysis Tool Development",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-DEV-05</div>
+                            <h2 class="subject-title-detail">PACKET ANALYSIS TOOL DEVELOPMENT</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Develop advanced packet analysis tools for deep inspection of network traffic, protocol analysis, and threat identification.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement packet capture (libpcap)</li>
+                                <li>Build protocol dissectors</li>
+                                <li>Implement deep packet inspection</li>
+                                <li>Create traffic analysis engine</li>
+                                <li>Build pattern matching</li>
+                                <li>Create visualization tools</li>
+                                <li>Implement reporting</li>
+                                <li>Build performance optimization</li>
+                                <li>Deploy in production</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | C | libpcap | Scapy | Dpkt | Wireshark | React | Elasticsearch | PostgreSQL | Docker
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 44,
+                    title: "ZTC-DEVSEC-01: CI/CD Security Integration",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-DEVSEC-01</div>
+                            <h2 class="subject-title-detail">CI/CD SECURITY INTEGRATION</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement secure CI/CD pipelines integrating security checks, vulnerability scanning, and compliance validation throughout the development lifecycle.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design secure CI/CD architecture</li>
+                                <li>Implement SAST scanning</li>
+                                <li>Implement DAST scanning</li>
+                                <li>Implement dependency scanning</li>
+                                <li>Build secret scanning</li>
+                                <li>Implement container scanning</li>
+                                <li>Create approval workflows</li>
+                                <li>Implement audit logging</li>
+                                <li>Build visibility dashboards</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Jenkins/GitLab CI | Python | Sonarqube | Trivy | OWASP Dependency Check | GitLab/GitHub | Docker | Kubernetes | PostgreSQL
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 45,
+                    title: "ZTC-DEVSEC-02: Secret Management in DevOps",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-DEVSEC-02</div>
+                            <h2 class="subject-title-detail">SECRET MANAGEMENT IN DEVOPS</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement centralized secret management systems for API keys, credentials, and sensitive data with rotation, access control, and audit logging.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design secret management architecture</li>
+                                <li>Implement secret storage</li>
+                                <li>Build secret rotation mechanisms</li>
+                                <li>Create access control policies</li>
+                                <li>Implement audit logging</li>
+                                <li>Build secret scanning for code</li>
+                                <li>Create emergency procedures</li>
+                                <li>Build monitoring dashboards</li>
+                                <li>Test against unauthorized access</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                HashiCorp Vault | AWS Secrets Manager | Azure Key Vault | Kubernetes Secrets | Python | Docker | Kubernetes | PostgreSQL
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 46,
+                    title: "ZTC-DEVSEC-03: Container Security & Hardening",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-DEVSEC-03</div>
+                            <h2 class="subject-title-detail">CONTAINER SECURITY &amp; HARDENING</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement comprehensive container security including image hardening, runtime protection, policy enforcement, and vulnerability scanning.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Build secure base images</li>
+                                <li>Implement container hardening</li>
+                                <li>Implement vulnerability scanning</li>
+                                <li>Deploy container runtime security (Falco)</li>
+                                <li>Implement policy enforcement (OPA)</li>
+                                <li>Build image signing and verification</li>
+                                <li>Implement network policies</li>
+                                <li>Create compliance scanning</li>
+                                <li>Build security dashboards</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Docker | Kubernetes | Falco | Trivy | OPA | Notary | Linux | Python | Prometheus | Grafana
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 47,
+                    title: "ZTC-DEVSEC-04: Infrastructure as Code Security",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-DEVSEC-04</div>
+                            <h2 class="subject-title-detail">INFRASTRUCTURE AS CODE (IaC) SECURITY</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement security scanning and compliance validation for Infrastructure as Code (Terraform, Ansible) ensuring secure cloud deployments.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement IaC security scanning</li>
+                                <li>Build policy as code (OPA)</li>
+                                <li>Implement drift detection</li>
+                                <li>Create secure templates</li>
+                                <li>Build compliance checking</li>
+                                <li>Implement change approval</li>
+                                <li>Create audit logging</li>
+                                <li>Build visualization tools</li>
+                                <li>Test against misconfigurations</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Terraform | Ansible | Python | OPA | Checkov | Tflint | CloudFormation | AWS/Azure/GCP | Docker | Kubernetes
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 48,
+                    title: "ZTC-DEVSEC-05: Compliance Automation",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-DEVSEC-05</div>
+                            <h2 class="subject-title-detail">COMPLIANCE AUTOMATION &amp; POLICY-AS-CODE</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement automated compliance checking and policy-as-code enforcement ensuring continuous compliance with regulatory requirements.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design policy as code framework</li>
+                                <li>Implement policy definitions (OPA/Rego)</li>
+                                <li>Build compliance validation engines</li>
+                                <li>Implement automated remediation</li>
+                                <li>Create audit trails</li>
+                                <li>Build compliance dashboards</li>
+                                <li>Implement policy versioning</li>
+                                <li>Create policy templates</li>
+                                <li>Test against compliance scenarios</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                OPA/Rego | Python | Terraform | Kubernetes | PostgreSQL | Docker | Prometheus | React | FastAPI
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 49,
+                    title: "ZTC-OPS-01: Kubernetes Orchestration & Security",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-OPS-01</div>
+                            <h2 class="subject-title-detail">KUBERNETES ORCHESTRATION &amp; SECURITY</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement secure Kubernetes clusters with proper network policies, RBAC, secret management, and monitoring for production workloads.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design Kubernetes architecture</li>
+                                <li>Implement RBAC and network policies</li>
+                                <li>Deploy secret management (Vault)</li>
+                                <li>Implement pod security policies</li>
+                                <li>Set up monitoring (Prometheus)</li>
+                                <li>Implement logging (ELK)</li>
+                                <li>Build upgrade procedures</li>
+                                <li>Implement backup and recovery</li>
+                                <li>Test against security scenarios</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Kubernetes | Docker | Helm | Prometheus | Grafana | ELK Stack | Vault | Python | Bash | Linux
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 50,
+                    title: "ZTC-OPS-02: Monitoring & Observability Stack",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-OPS-02</div>
+                            <h2 class="subject-title-detail">MONITORING &amp; OBSERVABILITY STACK</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design comprehensive monitoring and observability solutions including metrics collection, logging, distributed tracing, and alerting.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement metrics collection (Prometheus)</li>
+                                <li>Build dashboards (Grafana)</li>
+                                <li>Implement centralized logging (ELK)</li>
+                                <li>Implement distributed tracing (Jaeger)</li>
+                                <li>Create alert rules</li>
+                                <li>Build alerting system</li>
+                                <li>Implement SLA monitoring</li>
+                                <li>Create operational playbooks</li>
+                                <li>Test during incidents</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Prometheus | Grafana | ELK Stack | Jaeger | Python | Telegraf | Loki | Docker | Kubernetes | PostgreSQL
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 51,
+                    title: "ZTC-OPS-03: Load Balancing & High Availability",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-OPS-03</div>
+                            <h2 class="subject-title-detail">LOAD BALANCING &amp; HIGH AVAILABILITY</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement highly available infrastructure with load balancing, redundancy, failover mechanisms, and disaster recovery procedures.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design HA architecture</li>
+                                <li>Implement load balancing</li>
+                                <li>Set up redundancy</li>
+                                <li>Build failover mechanisms</li>
+                                <li>Implement health checks</li>
+                                <li>Create recovery procedures</li>
+                                <li>Build status dashboards</li>
+                                <li>Test failover scenarios</li>
+                                <li>Document procedures</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                HAProxy | Nginx | Keepalived | Linux | Terraform | Python | Prometheus | Docker | Kubernetes
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 52,
+                    title: "ZTC-OPS-04: Backup & Disaster Recovery",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-OPS-04</div>
+                            <h2 class="subject-title-detail">BACKUP, DISASTER RECOVERY &amp; BUSINESS CONTINUITY</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement backup and disaster recovery solutions ensuring business continuity with RTO/RPO targets and recovery procedures.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design backup architecture</li>
+                                <li>Implement backup strategies</li>
+                                <li>Set up backup monitoring</li>
+                                <li>Create recovery procedures</li>
+                                <li>Test recovery procedures</li>
+                                <li>Implement backup validation</li>
+                                <li>Create documentation</li>
+                                <li>Build recovery automation</li>
+                                <li>Test disaster scenarios</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Veeam | Commvault | Backup software | Python | PostgreSQL | Terraform | Kubernetes | Docker | Prometheus
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 53,
+                    title: "ZTC-OPS-05: Performance Tuning",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-OPS-05</div>
+                            <h2 class="subject-title-detail">PERFORMANCE TUNING &amp; CAPACITY PLANNING</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design systems for optimal performance through capacity planning, performance tuning, bottleneck analysis, and scalability improvements.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Implement performance monitoring</li>
+                                <li>Identify bottlenecks</li>
+                                <li>Perform capacity analysis</li>
+                                <li>Implement tuning recommendations</li>
+                                <li>Build forecasting models</li>
+                                <li>Create scaling policies</li>
+                                <li>Build performance dashboards</li>
+                                <li>Perform load testing</li>
+                                <li>Test scaling mechanisms</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python | Prometheus | Grafana | Locust | Apache JMeter | PostgreSQL | Linux | Docker | Kubernetes | Spark
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 54,
+                    title: "ZTC-NET-01: Enterprise Network Architecture",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-NET-01</div>
+                            <h2 class="subject-title-detail">ENTERPRISE NETWORK ARCHITECTURE</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design comprehensive enterprise network architectures balancing performance, security, scalability, and resilience for multi-site organizations.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design network topology</li>
+                                <li>Plan IP addressing strategy</li>
+                                <li>Design security zones</li>
+                                <li>Plan redundancy</li>
+                                <li>Design traffic flow</li>
+                                <li>Create network documentation</li>
+                                <li>Implement proof-of-concept</li>
+                                <li>Test performance</li>
+                                <li>Create operational runbooks</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Cisco/Juniper | GNS3 | Python | Terraform | Linux | NetBox | Wireshark | Prometheus | Grafana
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 55,
+                    title: "ZTC-NET-02: QoS Management",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-NET-02</div>
+                            <h2 class="subject-title-detail">QoS MANAGEMENT &amp; TRAFFIC CONTROL</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement Quality of Service (QoS) policies ensuring optimal network performance for different traffic types and user requirements.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design QoS policies</li>
+                                <li>Implement traffic classification</li>
+                                <li>Configure rate limiting</li>
+                                <li>Implement prioritization</li>
+                                <li>Build monitoring systems</li>
+                                <li>Create traffic policies</li>
+                                <li>Test under load</li>
+                                <li>Build visualization tools</li>
+                                <li>Create documentation</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Cisco IOS | Junos | Linux tc | Python | GNS3 | Wireshark | Iperf | Prometheus | Grafana
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 56,
+                    title: "ZTC-NET-03: VPN Inter-Site & Mesh",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-NET-03</div>
+                            <h2 class="subject-title-detail">VPN INTER-SITE &amp; MESH NETWORKING</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5 months</div>
+                                <div><strong>Team:</strong> 1 person</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement inter-site VPN solutions and mesh networking for secure communication between multiple locations.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design VPN topology</li>
+                                <li>Implement site-to-site VPN</li>
+                                <li>Implement mesh networking</li>
+                                <li>Configure failover</li>
+                                <li>Implement encryption</li>
+                                <li>Build monitoring</li>
+                                <li>Test connectivity</li>
+                                <li>Create documentation</li>
+                                <li>Implement in production</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                IPSec | OpenVPN | WireGuard | Cisco | Juniper | Python | GNS3 | Prometheus | Grafana
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 57,
+                    title: "ZTC-NET-04: Software-Defined Networking",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-NET-04</div>
+                            <h2 class="subject-title-detail">SOFTWARE-DEFINED NETWORKING (SDN)</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Implement Software-Defined Networking (SDN) solutions enabling programmable, flexible, and secure network management.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Study SDN architecture</li>
+                                <li>Implement OpenFlow controller</li>
+                                <li>Design network policies</li>
+                                <li>Implement traffic engineering</li>
+                                <li>Build network automation</li>
+                                <li>Create API interfaces</li>
+                                <li>Implement monitoring</li>
+                                <li>Test scenarios</li>
+                                <li>Build visualization tools</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                OpenFlow | ONOS/OpenDaylight | Python | Ryu | Mininet | Kubernetes | Docker | Prometheus | Grafana
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 58,
+                    title: "ZTC-NET-05: Network Segmentation",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-NET-05</div>
+                            <h2 class="subject-title-detail">NETWORK SEGMENTATION &amp; MICROSEGMENTATION</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Design and implement advanced network segmentation and microsegmentation strategies reducing attack surface and containing breach impact.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design segmentation strategy</li>
+                                <li>Implement network policies</li>
+                                <li>Configure firewalls</li>
+                                <li>Implement microsegmentation</li>
+                                <li>Build policy enforcement</li>
+                                <li>Create monitoring systems</li>
+                                <li>Test segmentation</li>
+                                <li>Build visualization tools</li>
+                                <li>Create documentation</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Cisco/Juniper | Kubernetes Network Policies | OPA | Linux iptables | Python | Prometheus | Grafana | Zeek | Suricata
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    id: 59,
+                    title: "ZTC-SPEC-01: TIP - Threat Intelligence Platform",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SPEC-01</div>
+                            <h2 class="subject-title-detail">TIP - THREAT INTELLIGENCE PLATFORM</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5-6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Build automated threat intelligence platform aggregating 50+ threat feeds, using ML to classify threats, delivering intelligence via APIs and dashboards to enterprise customers.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Develop threat feed aggregation pipeline (50+ sources)</li>
+                                <li>Train ML classification models (&gt;85% accuracy)</li>
+                                <li>Build real-time dashboards (React + D3.js)</li>
+                                <li>Create REST &amp; GraphQL APIs</li>
+                                <li>Implement alerting system</li>
+                                <li>Set up Elasticsearch indexing</li>
+                                <li>Perform load testing (1000+ threats/minute)</li>
+                                <li>Deploy to production (AWS or OVH Tunisia)</li>
+                                <li>Create customer documentation</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python (FastAPI) | TensorFlow/Scikit-Learn | Elasticsearch | PostgreSQL | React | Docker | Kubernetes | AWS/OVH
+                            </div>
+                            
+                            
+                        </div>
+                    `
+                },
+                {
+                    id: 60,
+                    title: "ZTC-SPEC-02: ComplianceBot",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SPEC-02</div>
+                            <h2 class="subject-title-detail">COMPLIANCEBOT - COMPLIANCE SCANNER</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5-6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Build automated compliance scanning platform checking infrastructure against GDPR, PCI-DSS, ISO 27001, generating audit-ready reports with remediation recommendations.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Study compliance frameworks</li>
+                                <li>Build scanning engines</li>
+                                <li>Integrate cloud APIs (AWS, Azure, GCP)</li>
+                                <li>Create report generator</li>
+                                <li>Develop remediation recommendations</li>
+                                <li>Build compliance dashboard</li>
+                                <li>Implement evidence collection</li>
+                                <li>Deploy to production</li>
+                                <li>Create customer documentation</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python (FastAPI) | PostgreSQL | Terraform | OPA | React | Docker | Kubernetes | ReportLab
+                            </div>
+                            
+                            
+                        </div>
+                    `
+                },
+                {
+                    id: 61,
+                    title: "ZTC-SPEC-03: MaaS Dashboard Pro",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SPEC-03</div>
+                            <h2 class="subject-title-detail">MAAS DASHBOARD PRO - MONITORING</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5-6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Enhance ZTC's Monitoring as a Service with advanced dashboard featuring ML anomaly detection, capacity planning, and executive reporting.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Build multi-tenant dashboard architecture</li>
+                                <li>Implement advanced alerting (threshold + ML anomaly detection)</li>
+                                <li>Create capacity planning module</li>
+                                <li>Develop incident management integration</li>
+                                <li>Build custom dashboard builder</li>
+                                <li>Mobile-optimize interface</li>
+                                <li>Deploy to production</li>
+                                <li>Create onboarding materials</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                React | Python (FastAPI) | PostgreSQL | TensorFlow | Prometheus | Grafana | Docker | Kubernetes
+                            </div>
+                            
+                            
+                        </div>
+                    `
+                },
+                {
+                    id: 62,
+                    title: "ZTC-SPEC-04: SecureAPI - Gateway",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SPEC-04</div>
+                            <h2 class="subject-title-detail">SECUREAPI - API GATEWAY</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5-6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Build API gateway with OAuth 2.0, rate limiting, DDoS protection, and secret management for development teams.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Design gateway architecture</li>
+                                <li>Implement API routing &amp; load balancing</li>
+                                <li>Add OAuth 2.0 authentication</li>
+                                <li>Create rate limiting engine</li>
+                                <li>Implement DDoS protection</li>
+                                <li>Build key management</li>
+                                <li>Integrate Vault</li>
+                                <li>Deploy to production</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Go or Python | Nginx/HAProxy | PostgreSQL | Redis | Vault | Docker | Kubernetes | FastAPI
+                            </div>
+                            
+                            
+                        </div>
+                    `
+                },
+                {
+                    id: 63,
+                    title: "ZTC-SPEC-05: PhishGuard",
+                    content: `
+                        <div class="subject-detail">
+                            <div class="subject-ref">ZTC-SPEC-05</div>
+                            <h2 class="subject-title-detail">PHISHGUARD - PHISHING SIMULATOR</h2>
+                            <div class="subject-meta">
+                                <div><strong>Duration:</strong> 5-6 months</div>
+                                <div><strong>Team:</strong> 1-2 people</div>
+                            </div>
+                            
+                            <div class="subject-section-title">Mission</div>
+                            <p class="subject-mission">Build phishing simulation and employee awareness training platform sending realistic emails, tracking interactions, providing on-click training.</p>
+                            
+                            <div class="subject-section-title">What You'll Do</div>
+                            <ul class="tasks-list">
+                                <li>Create email templates (50+ realistic)</li>
+                                <li>Build campaign builder</li>
+                                <li>Implement click tracking</li>
+                                <li>Create training modules</li>
+                                <li>Build user dashboard</li>
+                                <li>Build admin dashboard</li>
+                                <li>Create analytics engine</li>
+                                <li>Integrate payments (Stripe)</li>
+                                <li>Deploy to production</li>
+                            </ul>
+                            
+                            <div class="subject-section-title">Technologies</div>
+                            <div class="technologies-box">
+                                Python (Django) or Node.js | PostgreSQL | React | SendGrid/AWS SES | Stripe | Docker
+                            </div>
+                            
+                            
+                        </div>
+                    `
+                }
+            ]
+        };
+
+        let currentSlide = 0;
+        const totalSlides = presentationData.slides.length;
+
+        function renderSlides() {
+            const viewport = document.getElementById('slidesViewport');
+            viewport.innerHTML = presentationData.slides.map((slide, index) => `
+                <div class="slide ${index === 0 ? 'active' : ''}" data-slide="${index}">
+                    ${slide.content}
+                </div>
+            `).join('');
+        }
+
+        function renderSidebar() {
+            const slideList = document.getElementById('slideList');
+            slideList.innerHTML = presentationData.slides.map((slide, index) => `
+                <li class="slide-item ${index === 0 ? 'active' : ''}" data-slide="${index}">
+                    <span class="slide-item-number">${String(index + 1).padStart(2, '0')}</span>
+                    ${slide.title}
+                </li>
+            `).join('');
+
+            document.querySelectorAll('.slide-item').forEach(item => {
+                item.addEventListener('click', (e) => {
+                    const slideIndex = parseInt(e.currentTarget.getAttribute('data-slide'));
+                    goToSlide(slideIndex);
+                });
+            });
+        }
+
+        function updateSlideCounter() {
+            document.getElementById('slideCounter').textContent = `Slide ${currentSlide + 1} of ${totalSlides}`;
+        }
+
+        function goToSlide(index) {
+            document.querySelectorAll('.slide').forEach(slide => slide.classList.remove('active'));
+            document.querySelectorAll('.slide-item').forEach(item => item.classList.remove('active'));
+            
+            currentSlide = index;
+            
+            document.querySelector(`.slide[data-slide="${index}"]`).classList.add('active');
+            document.querySelector(`.slide-item[data-slide="${index}"]`).classList.add('active');
+            
+            updateSlideCounter();
+            updateNavButtons();
+            
+            document.getElementById('slidesViewport').scrollTop = 0;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                goToSlide(currentSlide + 1);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                goToSlide(currentSlide - 1);
+            }
+        }
+
+        function updateNavButtons() {
+            document.getElementById('prevBtn').disabled = currentSlide === 0;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+        }
+
+        document.getElementById('prevBtn').addEventListener('click', prevSlide);
+        document.getElementById('nextBtn').addEventListener('click', nextSlide);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        renderSlides();
+        renderSidebar();
+        updateSlideCounter();
+        updateNavButtons();
+    </script>
+</body>
+</html>
