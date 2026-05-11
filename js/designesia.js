@@ -1,5 +1,5 @@
  /* --------------------------------------------------
-  * © Copyright 2025 - CyberGuard by Designesia
+  * © Copyright 2026 - CyberGuard by Designesia
   * --------------------------------------------------*/
 (function($) {
 
